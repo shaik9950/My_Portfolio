@@ -1,0 +1,114 @@
+/* WLT DESIGN CONCEPTUAL CSS */
+:root {
+    --bg-color: #1a1a1a; /* Dark background */
+    --text-color: #f0f0f0; /* Light text */
+    --accent-color: #00ffff; /* Electric Blue/Cyan for highlights */
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* 1. Header Styling (Minimalist) */
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    z-index: 100;
+}
+.logo {
+    font-weight: 900; /* Extra bold */
+    font-size: 1.5em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+/* 2. Hero Section (Large Typography) */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+.hero-section h1 {
+    font-size: 5vw; /* Responsive large text */
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.1;
+}
+.tagline {
+    font-size: 1.5vw;
+    color: var(--accent-color);
+    margin-top: 10px;
+}
+.scroll-prompt {
+    position: absolute;
+    bottom: 30px;
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+/* 3. Grid Section (Clean Separation) */
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px; /* Separation line effect */
+    background-color: #333;
+}
+.content-block {
+    background-color: var(--bg-color);
+    padding: 100px 50px;
+}
+.content-block h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+/* 4. Projects Grid (Card-based) */
+.projects-grid {
+    padding: 100px 50px;
+}
+.section-title {
+    font-size: 4vw;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.project-card {
+    border: 1px solid #333;
+    padding: 50px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.project-card:hover {
+    background-color: #2a2a2a;
+    border-color: var(--accent-color);
+}
+.project-card h3 {
+    font-size: 2em;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
